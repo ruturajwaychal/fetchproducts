@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: sans-serif;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  color: #272727;
+  /* padding: 15px; */
+  border-radius: 10px;
+  border: 0px;
+  border-style: solid;
+  flex-direction: row;
+
+  width: 100%;
+
+  /* -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); */
+  /* box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); */
+  margin: 20px;
+  /* margin-right: 20px;
+
+  margin-bottom: 20px; */
+  align-items: center;
+}
+
+/* .container h3 {
+  margin-top: 8px;
+  padding-top: 5px;
+} */
+
+.card-body {
+  display: block;
+  position: relative;
+
+  width: 550px;
+  /* height: 600px; */
+  border-radius: 10px;
+  background-color: #ffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+.prod {
+  display: block;
+  position: relative;
+  /* padding: 20px 20px; */
+  /* margin-top: 20px; */
+  align-items: center;
+}
+
+.prod img {
+  width: 50%;
+  height: 225px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* margin-top: 25px; */
+}
+
+.prodInfo {
+  display: block;
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.classic {
+  border-top: 1px solid black;
+}
+
+.category {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.desc {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.cate {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.price {
+  /* position: absolute; */
+  bottom: 0;
+  font-size: 25px;
+}
+
+.title {
+  height: 45px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.product-add-btn {
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #272727;
+  color: #ffff;
+  width: 50%;
+  height: 25px;
+  display: block;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.product-add-btn:hover {
+  background-color: #99cbf7;
+  color: #272727;
+}
+
+.product-add-btn:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    /* height: 100vh; */
+    margin-left: 75px;
+  }
+  .card-body {
+    width: 75%;
+    display: block;
+    flex-direction: column;
+    /* padding-left: 25px; */
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  .category {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+}
